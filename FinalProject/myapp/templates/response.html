@@ -1,0 +1,28 @@
+<h3>{{numrows}} Records Found</h3>
+<div class="table-responsive">
+<table class="table table-striped custab">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Title</th>
+      <th>Conditions</th>
+      <th>Interventions</th>
+      <th>Location</th>
+      <th>Links</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {% for row in trial %}
+      <td>{{row[0]}}</td>
+      <td>{{row[2]}}</td>
+      <td>{{row[3]}}</td>
+      <td>{{row[4]}}</td>
+      <td>{{row[5]}}</td>
+      <td>{{row[6]}}</td>
+      <td>{{row[7]}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</div>
