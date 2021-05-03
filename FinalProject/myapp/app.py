@@ -5,10 +5,10 @@ from flaskext.mysql import MySQL
 myapp = Flask(__name__)
 # myapp.secret_key= 'secret'
 
-myapp.config['MYSQL_DATABASE_USER'] = 'b370f35fcbd089'
-myapp.config['MYSQL_DATABASE_PASSWORD'] = '75e4c0cb'
-myapp.config['MYSQL_DATABASE_DB'] = 'heroku_638c08cf00f0d78'
-myapp.config['MYSQL_DATABASE_HOST'] = 'us-cdbr-east-03.cleardb.com'
+myapp.config['MYSQL_DATABASE_USER'] = ''
+myapp.config['MYSQL_DATABASE_PASSWORD'] = ''
+myapp.config['MYSQL_DATABASE_DB'] = ''
+myapp.config['MYSQL_DATABASE_HOST'] = ''
 
 # my_sql = MySQL(myapp)
 my_sql = MySQL()
