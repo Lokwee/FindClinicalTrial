@@ -44,10 +44,10 @@ web: gunicorn app:myapp
 #### Steps to transfer local MySQL Database to a ClearDB instance 
 
 Using an example database with the following details, follow these steps to migrate a MySQL database to a remote server, in this case, Heroku's ClearDB
-Hostname: localhost
-Password: gold
-username: root
-Database name: example-db
+>- Hostname: localhost
+>- Password: gold
+>- username: root
+>- Database name: example-db
 - Export data using mysqldump by running below command on terminal:
 
 ```
@@ -55,10 +55,10 @@ mysqldump -u root -p --opt example-db > example-db.sql
 ```
 - The example-db.sql will now be available in your computer's home folder
 - Given below sample Heroku database information, the next step is to add below line to the beginning of your .sql file
-Hostname: heroku_host
-Password: silver
-username: golden
-Database name: heroku_db
+>- Hostname: heroku_host
+>- Password: silver
+>- username: golden
+>- Database name: heroku_db
 
 ```
 use `heroku_db`;
