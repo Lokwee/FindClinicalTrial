@@ -37,3 +37,7 @@ web: gunicorn app:myapp
 ```
 
 ## Lessons Learnt and Future Improvements
+1. The web app still defaults to showing the first five clinical trials from our database. 
+2. I first created a locally hosted MySQL database and found it difficult to use it to deploy the app -- probably a good thing because unlike Heroku, a locally hosted database would limit the availability of the web app.
+3. I had to transfer my database from my local host to clearDB (heroku add-on that enables working with MySQL) -- Heroku is built and works using PostgreSQL. It would probably be easier to use PostgreSQL but I insisted on using MySQL.
+#### Steps to 
